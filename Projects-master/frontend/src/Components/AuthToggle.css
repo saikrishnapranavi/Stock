@@ -1,0 +1,192 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #000000 !important; /* Ensure the text color remains black */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background-color: #007bff;
+  color: #efe7e7ef;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 50px; /* Adjust padding for rectangular shape */
+  border-radius: 3px; /* Rounded corners */
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #318e2d;
+}
+
+.name-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name-inputs input {
+  flex: 1;
+}
+
+.btn-auth {
+  margin-top: 1rem;
+}
+
+.create-account-link {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.create-account-link .toggle-link {
+  color: #007bff; /* Blue for the link */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-account-link .toggle-link:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+  color: #888888;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Social login styles */
+.social-login {
+  display: flex;
+  justify-content: center;
+}
+
+.google-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db4437;
+  color: #ffffff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.google-btn:hover {
+  background-color: #b4382d;
+}
+
+/* Toggle login and signup visibility */
+.signup-mode .signup-form,
+.login-mode .login-form {
+  display: block;
+}
+
+.signup-mode .login-form,
+.login-mode .signup-form {
+  display: none;
+}
+
+/* Hide sign-up message when in login mode */
+.login-mode .create-account-link {
+  display: block;
+}
+
+.signup-mode .create-account-link {
+  display: none;
+}
+
+/* Hide login message when in sign-up mode */
+.signup-mode .toggle-message {
+  display: block;
+}
+
+.login-mode .toggle-message {
+  display: none;
+}
+
+/* Style for the "Already have an account" text */
+.toggle-message p {
+  font-size: 1rem;
+  color: black; /* Set the color of the "Already have an account" text to black */
+}
+
+.toggle-message .toggle-link {
+  color: #007bff; /* Set the "Login" link color to blue */
+}
+
+.toggle-message .toggle-link:hover {
+  text-decoration: underline; /* Underline when hovered */
+}
+
+/* Forgot Password link styles */
+.forgot-password-link {
+  color: black; /* Set the "Forgot Password" text color to black */
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline; /* Underline when hovered */
+}
